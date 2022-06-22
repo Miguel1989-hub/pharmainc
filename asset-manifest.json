@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/Miguel1989-hub/pharmainc/static/js/main.a00611a6.js",
-    "index.html": "/Miguel1989-hub/pharmainc/index.html",
-    "main.a00611a6.js.map": "/Miguel1989-hub/pharmainc/static/js/main.a00611a6.js.map"
+    "main.js": "/pharmainc/static/js/main.a00611a6.js",
+    "index.html": "/pharmainc/index.html",
+    "main.a00611a6.js.map": "/pharmainc/static/js/main.a00611a6.js.map"
   },
   "entrypoints": [
     "static/js/main.a00611a6.js"
