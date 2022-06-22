@@ -1,7 +1,7 @@
 {
   "name": "pharmainc",
   "version": "0.1.0",
-  "homepage": "https://github.com/Miguel1989-hub/pharmainc",
+  "homepage": "https://Miguel1989-hub.github.io/pharmainc",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
