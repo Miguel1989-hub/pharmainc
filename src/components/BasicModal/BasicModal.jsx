@@ -19,14 +19,15 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal({ name, picture }) {
+
+export default function BasicModal({ name, picture, email, gender, birth, phone, nationality, address, id }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
     <div>
-     <Button variant="contained" onClick={handleOpen}>View</Button>
+      <Button variant="contained" onClick={handleOpen}>View</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -39,11 +40,29 @@ export default function BasicModal({ name, picture }) {
             src={picture}
             sx={{ width: 100, height: 100, position: "relative", marginTop: "-85px", border: "1px solid blue", marginLeft: "110px" }}
           />
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            {name}
+          <Typography id="modal-modal-title"  sx={{ mt: 2 }} variant="h6" component="h2">
+            Pacient: {name}
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          <Typography variant="subtitle1" component="h3" sx={{ mt: 1 }}>
+            Email: {email}
+          </Typography>
+          <Typography variant="subtitle1" component="h3" sx={{ mt: 1 }}>
+            Gender: {gender}
+          </Typography>
+          <Typography variant="subtitle1" component="h3" sx={{ mt: 1 }}>
+            Birth: {birth}
+          </Typography>
+          <Typography variant="subtitle1" component="h3" sx={{ mt: 1 }}>
+            Phone: {phone}
+          </Typography>
+          <Typography variant="subtitle1" component="h3" sx={{ mt: 1 }}>
+            Nationality: {nationality}
+          </Typography>
+          <Typography variant="subtitle1" component="h3" sx={{ mt: 1 }}>
+            Address: {address}
+          </Typography>
+          <Typography variant="subtitle1" component="h3" sx={{ mt: 1 }}>
+            ID-Client: {id}
           </Typography>
         </Box>
       </Modal>

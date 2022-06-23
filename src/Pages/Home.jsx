@@ -2,12 +2,14 @@ import React from "react";
 import AppBarHeader from "../components/AppBarHeader/AppBarHeader";
 import Container from '@mui/material/Container';
 import { Typography } from "@mui/material";
-import SearchBar from "../components/SearchBar/SearchBar"
 import DataTable from "../components/DataTable/DataTable";
 
 
 
 const Home = () => {
+
+
+
   return (
     <>
       <AppBarHeader />
@@ -20,7 +22,7 @@ const Home = () => {
           >
              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus.
         </Typography>
-        <SearchBar />
+       
         <DataTable />
       </Container>
     </>

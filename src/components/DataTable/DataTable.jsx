@@ -9,6 +9,7 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/system/Box';
 import LoadingButton from "@mui/lab/LoadingButton";
 import BasicModal from '../BasicModal/BasicModal';
+import SearchBar from '../SearchBar/SearchBar';
 
 
 const DataTable = () => {
@@ -43,6 +44,7 @@ const DataTable = () => {
 
   return (
     <>
+     <SearchBar/>
       <TableContainer sx={{ marginTop: "2rem" }} component={Paper} >
         <Table>
           <TableHead>
@@ -63,8 +65,15 @@ const DataTable = () => {
                     <TableCell>{user.dob.date.slice(0, 10)}</TableCell>
                     <TableCell>
                       <BasicModal 
-                        name={user.name.first}
+                        name={`${user.name.title} ${user.name.first} ${user.name.last}`}
                         picture={user.picture.large}
+                        email={user.email}
+                        gender={user.gender}
+                        birth={user.dob.date.slice(0, 10)}
+                        phone={user.phone}
+                        nationality={user.nat}
+                        address={`${user.location.street.name}, ${user.location.street.number}, ${user.city} ${user.country}`}
+                        id={user.id.value}
                       />
                     </TableCell>
                   </TableRow>
